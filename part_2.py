@@ -9,6 +9,7 @@ LOWERCASE_ALPHABET = [letter.lower() for letter in UPPERCASE_ALPHABET]
 
 
 def part_two(plaintext, shift_amount):
+    """Encrypt a string with shift cipher and a given shift amount."""
     ciphertext = ""
     for i in plaintext:
         ciphertext += part_two_encrypt_char(i, shift_amount)
@@ -17,6 +18,7 @@ def part_two(plaintext, shift_amount):
 
 
 def part_two_encrypt_char(plainchar, shift):
+    """Encrypt a char with shift cipher and a given shift amount."""
     # if the character is in upper-case then use UPPERCASE_ALPHABET to encrypt
     if plainchar.upper() == plainchar:
         letter_num = UPPERCASE_ALPHABET.index(plainchar)
