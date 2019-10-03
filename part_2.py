@@ -30,4 +30,4 @@ def part_two_encrypt_char(plainchar, shift):
         return LOWERCASE_ALPHABET[(letter_num+shift) % len(LOWERCASE_ALPHABET)]
 
 
-print(part_two('thequickbrownfoxjumpsoverthelazydog', 13))
+# print(part_two('thequickbrownfoxjumpsoverthelazydog', 13))
