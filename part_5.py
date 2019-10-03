@@ -18,14 +18,19 @@ def part_five_decrypt_char(cipherchar, key):
     """Decrypt a given char using substitution cipher and a key."""
     plainchar = cipherchar
 
-    # if plainchar is in upper-case, use UPPERCASE_ALPHABET to encrypt
-    if plainchar.upper() == plainchar and plainchar in UPPERCASE_ALPHABET:
-        plain_letter_num = UPPERCASE_ALPHABET.index(plainchar)
-        cipherchar = key[plain_letter_num]
+    # if cipherchar is in upper-case, use UPPERCASE_ALPHABET to decrypt
+    if cipherchar.upper() == cipherchar and cipherchar in UPPERCASE_ALPHABET:
+        cipher_letter_num = key.index(cipherchar)
+        plainchar = UPPERCASE_ALPHABET[cipher_letter_num]
 
-    # if plainchar is in lower-case, use LOWERCASE_ALPHABET to encrypt
-    if plainchar.lower() == plainchar and plainchar in LOWERCASE_ALPHABET:
-        plain_letter_num = LOWERCASE_ALPHABET.index(plainchar)
-        cipherchar = key[plain_letter_num]
+    # if cipherchar is in lower-case, use LOWERCASE_ALPHABET to decrypt
+    if cipherchar.lower() == cipherchar and cipherchar in LOWERCASE_ALPHABET:
+        cipher_letter_num = key.index(cipherchar)
+        plainchar = LOWERCASE_ALPHABET[cipher_letter_num]
 
-    return cipherchar
+    return plainchar
+
+
+TEST_CIPHERTEXT = 'hzqftcqumfqfzxcxcdqscqhzqfmqfzxcxcdquxhzqmllqzxfqaxdzh'
+TEST_KEY = 'mwgpbdzxrylacsokjfhtnueivq'
+print(part_five(TEST_CIPHERTEXT, TEST_KEY))
