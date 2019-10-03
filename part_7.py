@@ -1,7 +1,6 @@
 """Handle key tranformation for 7 character key substitution cipher."""
 
 from part_1 import LOWERCASE_ALPHABET
-from part_3 import print_list
 
 
 def create_key(password):
