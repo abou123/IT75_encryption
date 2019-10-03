@@ -63,5 +63,5 @@ def join_key(pw, post, pre):
     return pw + post + pre
 
 
-key = 'aaahaaaahoc'
-print_list(create_key(key))
+# key = 'aaahaaaahoc'
+# print_list(create_key(key))
