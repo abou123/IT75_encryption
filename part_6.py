@@ -5,6 +5,7 @@ from part_5 import part_five
 
 
 def part_six():
+    """Encrypt or decrypt user input using a key and substitution cipher."""
     encrypt_or_decrypt = 'a'
     while (encrypt_or_decrypt[0] != 'e' and encrypt_or_decrypt[0] != 'E'
             and encrypt_or_decrypt[0] != 'd' and encrypt_or_decrypt[0] != 'D'):
@@ -24,4 +25,5 @@ def part_six():
     elif encrypt_or_decrypt[0] == 'd' or encrypt_or_decrypt[0] == 'D':
         return part_five(text, key)
 
-print(part_six())
+
+# print(part_six())
