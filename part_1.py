@@ -1,8 +1,6 @@
 """this module decrypts a substitution cipher."""
 
-UPPERCASE_ALPHABET = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J',
-                      'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T',
-                      'U', 'V', 'W', 'X', 'Y', 'Z']
+UPPERCASE_ALPHABET = ['ABCDEFGHIJKLMNOPQRSTUVWXYZ']
 # create a lower-case alphabet from uppercase_alphabet
 LOWERCASE_ALPHABET = [letter.lower() for letter in UPPERCASE_ALPHABET]
 
