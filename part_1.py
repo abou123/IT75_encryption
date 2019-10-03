@@ -48,4 +48,4 @@ def part_one_decode_char(cipherchar, shift):
     return LOWERCASE_ALPHABET[(letter_num+shift) % len(LOWERCASE_ALPHABET)]
 
 
-print(part_one('BKFTAZDAOWE', 'a', 'o'))
+# print(part_one('BKFTAZDAOWE', 'a', 'o'))
