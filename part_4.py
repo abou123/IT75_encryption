@@ -31,6 +31,6 @@ def part_four_encrypt_char(plainchar, key):
     return cipherchar
 
 
-SAMPLE_KEY = 'mwgpbdzxrylacsokjfhtnueivq'
-SAMPLE_PLAINTEXT = 'of shoes and ships and sealing wax of cabbages and kings'
-print(part_four(SAMPLE_PLAINTEXT, SAMPLE_KEY))
+# SAMPLE_KEY = 'mwgpbdzxrylacsokjfhtnueivq'
+# SAMPLE_PLAINTEXT = 'of shoes and ships and sealing wax of cabbages and kings'
+# print(part_four(SAMPLE_PLAINTEXT, SAMPLE_KEY))
