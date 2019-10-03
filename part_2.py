@@ -25,9 +25,8 @@ def part_two_encrypt_char(plainchar, shift):
         return UPPERCASE_ALPHABET[(letter_num+shift) % len(UPPERCASE_ALPHABET)]
 
     # if the character is in lower-case then use LOWERCASE_ALPHABET to encrypt
-    if plainchar.lower() == plainchar:
-        letter_num = LOWERCASE_ALPHABET.index(plainchar)
-        return LOWERCASE_ALPHABET[(letter_num+shift) % len(LOWERCASE_ALPHABET)]
+    letter_num = LOWERCASE_ALPHABET.index(plainchar)
+    return LOWERCASE_ALPHABET[(letter_num+shift) % len(LOWERCASE_ALPHABET)]
 
 
 # print(part_two('thequickbrownfoxjumpsoverthelazydog', 13))
