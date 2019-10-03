@@ -31,6 +31,9 @@ def part_five_decrypt_char(cipherchar, key):
     return plainchar
 
 
-TEST_CIPHERTEXT = 'hzqftcqumfqfzxcxcdqscqhzqfmqfzxcxcdquxhzqmllqzxfqaxdzh'
+# teacher provided ciphertext that doesn't decrypt
+# TEST_CIPHERTEXT = 'hzqftcqumfqfzxcxcdqscqhzqfmqfzxcxcdquxhzqmllqzxfqaxdzh'
+# encrypted result from previous part
+TEST_CIPHERTEXT = 'od hxobh msp hxrkh msp hbmarsz emi od gmwwmzbh msp lrszh'
 TEST_KEY = 'mwgpbdzxrylacsokjfhtnueivq'
 print(part_five(TEST_CIPHERTEXT, TEST_KEY))
