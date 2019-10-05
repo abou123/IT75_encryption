@@ -2,8 +2,8 @@
 
 LOWERCASE_ALPHABET = 'abcdefghijklmnopqrstuvwxyz '
 UPPERCASE_ALPHABET = ''
-for i in LOWERCASE_ALPHABET:
-    UPPERCASE_ALPHABET += i.upper()
+for letter in LOWERCASE_ALPHABET:
+    UPPERCASE_ALPHABET += letter.upper()
 
 
 def part_five(ciphertext, key):
