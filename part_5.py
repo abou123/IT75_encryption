@@ -1,7 +1,9 @@
 """This module decrypts given ciphertext with substitution cipher and a key."""
 
-from part_1 import UPPERCASE_ALPHABET
-from part_1 import LOWERCASE_ALPHABET
+LOWERCASE_ALPHABET = 'abcdefghijklmnopqrstuvwxyz '
+UPPERCASE_ALPHABET = ''
+for i in LOWERCASE_ALPHABET:
+    UPPERCASE_ALPHABET += i.upper()
 
 
 def part_five(ciphertext, key):
@@ -32,7 +34,8 @@ def part_five_decrypt_char(cipherchar, key):
 
 
 # teacher provided ciphertext that doesn't decrypt
-# TEST_CIPHERTEXT = 'hzqftcqumfqfzxcxcdqscqhzqfmqfzxcxcdquxhzqmllqzxfqaxdzh'
+# TEST_CIPHERTEXT = 'hz qftcqumfqfzxcxcdqscqhz qf mqfzxcxcdquxhzqmllqzxfqaxdzh'
+# TEST_KEY = 'mwgp bdzxrylacsokjfhtnueivq'
 # encrypted result from previous part
 # TEST_CIPHERTEXT = 'od hxobh msp hxrkh msp hbmarsz emi od gmwwmzbh msp lrszh'
 # TEST_KEY = 'mwgpbdzxrylacsokjfhtnueivq'
